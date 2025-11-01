@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff; 
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px; 
+    text-align: center;
+}
+
+.text-center {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Input Group Styling */
+.input-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Separator line */
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+.icon {
+    color: #777; 
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.input-group input {
+    flex-grow: 1; 
+    border: none;
+    outline: none; 
+    padding: 10px 0;
+    font-size: 16px;
+    background: transparent;
+}
+
+.input-group input::placeholder {
+    color: #999;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.forgot-password a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #fdd835; 
+    color: #333; 
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ffeb3b; 
+}
+
+/* Sign Up Link (Belum punya akun?) */
+.signup-link {
+    margin-top: 25px;
+}
+
+.signup-link a {
+    color: #4a90e2; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Styling untuk pesan error (Wajib diisi) */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -15px; 
+    margin-bottom: 10px;
+    display: block; 
+    text-align: left;
+}
+
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

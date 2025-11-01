@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Bahan Ajar</title>
+    <link rel="stylesheet" href="css/style.stok.css" />
+    <link rel="stylesheet" href="css/style.navbar.css" />
+  </head>
+  <body style="background-color: #f8f8f8">
+    <div class="navbar">
+      <div class="left-side">
+        <a href="stok.html">Informasi Bahan Ajar</a>
+        <a href="dashboard.html">Tracking Pengiriman</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Laporan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Monitoring Progress DO Bahan Ajar</a>
+            <a href="#">Rekap Bahan Ajar</a>
+          </div>
+        </div>
+        <a href="#history">Histori Transaksi Bahan Ajar</a>
+      </div>
+      <div class="right-side">
+        <a href="index.html">Keluar Aplikasi</a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Data Bahan Ajar</h1>
+
+      <button id="tambahDataBtn" class="add-button">+ Tambah Data</button>
+
+      <div class="table-responsive">
+        <table id="bahanAjarTable">
+          <thead>
+            <tr>
+              <th>Cover</th>
+              <th>Kode Lokasi</th>
+              <th>Kode Barang</th>
+              <th>Nama Barang</th>
+              <th>Jenis</th>
+              <th>Edisi</th>
+              <th>Stok</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="tambahDataModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Tambah Bahan Ajar Baru</h2>
+        <form id="tambahForm">
+          <label for="inputKodeLokasi">Kode Lokasi</label>
+          <input type="text" id="inputKodeLokasi" required />
+
+          <label for="inputKodeBarang">Kode Barang</label>
+          <input type="text" id="inputKodeBarang" required />
+
+          <label for="inputNamaBarang">Nama Barang</label>
+          <input type="text" id="inputNamaBarang" required />
+
+          <label for="inputJenisBarang">Jenis Barang</label>
+          <select id="inputJenisBarang" required>
+            <option value="BMP">BMP</option>
+            <option value="Non-BMP">Non-BMP</option>
+            <option value="MODUL">MODUL</option>
+          </select>
+
+          <label for="inputEdisi">Edisi</label>
+          <input type="number" id="inputEdisi" min="1" required />
+
+          <label for="inputStok">Stok</label>
+          <input type="number" id="inputStok" min="0" required />
+
+          <button type="submit" class="submit-button">Simpan Data</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="dummy/data.js"></script>
+    <script src="js/script.stok.js"></script>
+  </body>
+</html>

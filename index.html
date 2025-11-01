@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="https://www.ut.ac.id/wp-content/uploads/2015/11/logo-ut-small-transparent.png.webp" width="250" alt="logo-ut" />
+
+      <h4 class="text-center">Selamat Datang di Website Pemesanan Bahan Ajar Universitas Terbuka</h4>
+
+      <form class="login-form" id="loginForm">
+        <div class="input-group">
+          <i class="fa-solid fa-envelope icon"></i>
+          <input type="text" id="email" placeholder="Email" />
+        </div>
+        <span class="error-message" id="emailError"></span>
+
+        <div class="input-group">
+          <i class="fa-solid fa-key icon"></i>
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+        <span class="error-message" id="passwordError"></span>
+
+        <div id="forgotPwd" class="forgot-password">
+          <a href="#">Lupa password ?</a>
+        </div>
+
+        <button type="submit" class="login-button">Masuk</button>
+      </form>
+
+      <div id="signupLink" class="signup-link">
+        <a href="#">Belum punya akun?</a>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="textModal"></p>
+      </div>
+    </div>
+
+    <script src="js/script.login.js"></script>
+  </body>
+</html>

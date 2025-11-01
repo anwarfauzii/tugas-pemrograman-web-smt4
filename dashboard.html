@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking Paket</title>
+    <link rel="stylesheet" href="css/style.dashboard.css" />
+    <link rel="stylesheet" href="css/style.navbar.css" />
+  </head>
+  <body style="background-color: #f8f8f8">
+    <div class="navbar">
+      <div class="left-side">
+        <a href="stok.html">Informasi Bahan Ajar</a>
+        <a href="dashboard.html">Tracking Pengiriman</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Laporan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Monitoring Progress DO Bahan Ajar</a>
+            <a href="#">Rekap Bahan Ajar</a>
+          </div>
+        </div>
+        <a href="#history">Histori Transaksi Bahan Ajar</a>
+      </div>
+      <div class="right-side">
+        <a href="index.html">Keluar Aplikasi</a>
+      </div>
+    </div>
+    <div class="content-track">
+      <div class="container">
+        <div class="input-section">
+          <label for="doBilling">No. DO/Billing</label>
+          <input type="text" id="doBilling" placeholder="Masukkan No. DO/Billing" />
+          <button id="lacakBtn">Lacak</button>
+        </div>
+
+        <div id="trackingResult" class="tracking-result"></div>
+      </div>
+    </div>
+
+    <script src="dummy/data.js"></script>
+    <script src="js/script.dashboard.js"></script>
+  </body>
+</html>
