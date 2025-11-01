@@ -36,5 +36,3 @@ Berikut adalah fitur utama yang dikembangkan dalam proyek ini, diorganisir sesua
     * Data yang diinputkan melalui form akan **ditambahkan ke *array* `dataBahanAjar`** dan langsung **di-*render* ke DOM** (tabel) tanpa perlu *refresh* halaman (simulasi penambahan data lokal).
 
 ---
-
-## 📂 Struktur Proyek
